@@ -192,7 +192,7 @@ function loadCssDefer($html, $handle)
     $html = str_replace('media=\'all\'', 'media="print" onload="this.media=\'all\'"', $html);
     return $html;
 }
-add_filter('style_loader_tag', 'loadCssDefer', 10, 2);
+// add_filter('style_loader_tag', 'loadCssDefer', 10, 2);
 
 
 function addCssCriticalPath()
@@ -207,4 +207,4 @@ function addCssCriticalPath()
 
 }
 
-add_action('wp_head', 'addCssCriticalPath', 3);
+// add_action('wp_head', 'addCssCriticalPath', 3);
