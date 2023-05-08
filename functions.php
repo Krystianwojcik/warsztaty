@@ -186,3 +186,25 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+function loadCssDefer($html, $handle)
+{
+    $html = str_replace('media=\'all\'', 'media="print" onload="this.media=\'all\'"', $html);
+    return $html;
+}
+add_filter('style_loader_tag', 'loadCssDefer', 10, 2);
+
+
+function addCssCriticalPath()
+{
+    ?>
+    <style>
+        ...
+    </style>
+    <?php
+
+    get_template_part('css-critical-path');
+
+}
+
+add_action('wp_head', 'addCssCriticalPath', 3);
