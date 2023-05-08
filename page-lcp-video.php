@@ -2,7 +2,6 @@
 
 <?php get_header(); ?>
     <section class="hero d-flex flex-column flex-md-row d-flex align-items-center">
-        <?php /*echo wp_get_attachment_image(9, 'full', '', array('class' => 'hero__background')); */?>
 
         <div class="container">
             <div class="row d-flex">
