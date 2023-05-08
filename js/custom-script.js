@@ -26,3 +26,11 @@ if (preloader) {
 		preloader.classList.add('preloader--hide')
 	});
 }
+
+const video = document.querySelector('.js-video');
+const videoPreload = document.querySelector('.js-video-preload');
+
+
+video.addEventListener("loadeddata", () => {
+	videoPreload.classList.add('hide');
+});
