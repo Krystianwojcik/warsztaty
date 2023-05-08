@@ -31,6 +31,8 @@ const video = document.querySelector('.js-video');
 const videoPreload = document.querySelector('.js-video-preload');
 
 
-video.addEventListener("loadeddata", () => {
-	videoPreload.classList.add('hide');
-});
+if (video && videoPreload) {
+	video.addEventListener("loadeddata", () => {
+		videoPreload.classList.add('hide');
+	});
+}
