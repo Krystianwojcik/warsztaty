@@ -14,11 +14,6 @@
 <html <?php language_attributes(); ?>>
 <head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://www.youtube.com">
-    <link rel="preconnect" href="https://www.youtube.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
 
 	<meta charset="<?php bloginfo( 'charset' ); ?>">

@@ -4,35 +4,3 @@ const swiper = new Swiper(".mySwiper", {
 		prevEl: ".swiper-button-prev",
 	},
 });
-
-
-const button = document.querySelector('.js-button');
-if (button) {
-	button.addEventListener('click', () => {
-		console.log(button);
-		button.classList.toggle('btn-primary');
-	})
-}
-
-const text = document.querySelector('.js-text');
-if (text) {
-	text.textContent = "JS text";
-}
-
-const preloader = document.querySelector('.js-preloader');
-if (preloader) {
-	console.log(preloader);
-	document.addEventListener("DOMContentLoaded", () => {
-		preloader.classList.add('preloader--hide')
-	});
-}
-
-const video = document.querySelector('.js-video');
-const videoPreload = document.querySelector('.js-video-preload');
-
-
-if (video && videoPreload) {
-	video.addEventListener("loadeddata", () => {
-		videoPreload.classList.add('hide');
-	});
-}
